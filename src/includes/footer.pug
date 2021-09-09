@@ -5,30 +5,32 @@ footer.py-6.px-4.bg-gray-700.divide-y.divide-gray-500.text-white.sm_px-10
   //- Links
   .py-10.grid.grid-cols-1.gap-3.sm_grid-cols-2.md_grid-cols-3.lg_grid-cols-4.xl_grid-cols-5
     //- Logo
-    .bg-gray-400.w-40.h-10.mb-6.sm_m-0
+    //- .bg-gray-400.w-40.h-10.mb-6.sm_m-0
+    p.font-serif.font-bold.text-2xl.mb-6.sm_m-0 Central Calcutta Polytecnic
     //- Quick Links
     div
-      h1.font-semibold.text-xl.mb-2 Quick Links
+      h1.font-semibold.font-serif.text-xl.mb-2 Quick Links
       .flex.flex-col.items-start
         +navlink("About Us", "#")
         +navlink("Gallery", "#")
         +navlink("Events", "#")
     //- Programs
     div
-      h1.font-semibold.text-xl.mb-2 Programs
+      h1.font-semibold.font-serif.text-xl.mb-2 Programs
       .flex.flex-col.items-start
-        +navlink("Program #1", "#")
-        +navlink("Program #2", "#")
+        +navlink("Regular Diploma", "#")
+        +navlink("Diploma (Part Time)", "#")
+        +navlink("Post Diploma", "#")
     //- Resources
     div
-      h1.font-semibold.text-xl.mb-2 Resources
+      h1.font-semibold.font-serif.text-xl.mb-2 Resources
       .flex.flex-col.items-start
         +navlink("FAQ", "#")
         +navlink("Submit Ticket", "#")
         +navlink("Contact Us", "#")
     //- Newsletter
     div
-      h1.font-semibold.text-xl.mb-2 Newsletter
+      h1.font-semibold.font-serif.text-xl.mb-2 Newsletter
       .flex.flex-col
         p.py-1.text-sm.font-semibold.text-gray-400 Subscribe newsletter to get updates.
         form.mt-2.flex.w-auto(action="#", method="get")
@@ -36,4 +38,6 @@ footer.py-6.px-4.bg-gray-700.divide-y.divide-gray-500.text-white.sm_px-10
           button.flex.items-center.p-4.bg-blue-600.hover_ring-2: span.material-icons-round send
 
   //- Copyright
-  p.pt-5.text-center.text-gray-400.text-sm.font-semibold Copyright &copy; 2021 | Made with &lt;3 by Asim Bera
+  div.pt-4
+    p.text-center.text-gray-400.text-sm.font-semibold 2021 &copy; Asim Bera
+    p.mt-2.text-center.text-xs.text-gray-400 Assets by: Suman Mondal

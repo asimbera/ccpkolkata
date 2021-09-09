@@ -18,5 +18,8 @@
     "parcel": "^2.0.0-rc.0",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.14"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
   }
 }
