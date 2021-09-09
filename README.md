@@ -10,4 +10,4 @@ Live Preview: <https://ccpkolkata.asimbera.tech>
 
 ## Credits
 
-- @sumuhere - for assets
+- [@sumuhere](https://github.com/sumuhere) - for assets
