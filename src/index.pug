@@ -4,7 +4,7 @@ extends layout.pug
 mixin programs-card(image, name, description, href)
   li.splide__slide.group.p-4.transition.duration-500.ease-in-out.border.border-gray-100.rounded.w-full.hover_border.hover_border-blue-600.hover_bg-blue-50
     .inline-block.overflow-hidden.w-full
-      img.h-36.w-full.object-cover.transition.duration-500.ease-in-out.group-hover_scale-110(src="./assets/bitmap.png", alt="")
+      img.h-36.w-full.object-cover.transition.duration-500.ease-in-out.group-hover_scale-110(src= image, alt="")
     h1.font-serif.font-bold.text-gray-700.text-xl.transition.duration-500.ease-in-out.group-hover_text-blue-700.my-4= name
     p.text-gray-500.mb-4= description
     a.text-blue-600.font-semibold.border-b-2.border-blue-600(href= href) Learn More
@@ -38,14 +38,14 @@ block content
     .splide.w-full
       .splide__track
         ul.splide__list
-          +programs-card("./assets/bitmap.png", "Mechanical Engineering", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Electrical Engineering", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Computer Science and Technology", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Electronics and Telecommunication Engineering", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Post Diploma in Medical Electronics", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Mechanical Engineering (part-time)", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Electrical Engineering (part-time)", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
-          +programs-card("./assets/bitmap.png", "Electronics and Telecommunication Engineering (part-time)", "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, rem?", "#")
+          +programs-card("./assets/ME.jpeg", "Mechanical Engineering", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
+          +programs-card("./assets/EE.jpeg", "Electrical Engineering", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
+          +programs-card("./assets/CST.jpeg", "Computer Science and Technology", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
+          +programs-card("./assets/ECE.jpeg", "Electronics and Telecommunication Engineering", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
+          +programs-card("./assets/PMED.jpeg", "Post Diploma in Medical Electronics", "Intake Capacity: 15 | Course Duration: IDK", "#")
+          +programs-card("./assets/ME.jpeg", "Mechanical Engineering (part-time)", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
+          +programs-card("./assets/EE.jpeg", "Electrical Engineering (part-time)", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
+          +programs-card("./assets/ECE.jpeg", "Electronics and Telecommunication Engineering (part-time)", "Intake Capacity: 60 | Course Duration: 3 Years", "#")
 
   //- Essential Resources Section
   section.bg-blue-50.p-4.sm_px-10.py-8.grid.gap-6.grid-cols-1.lg_grid-cols-2
@@ -54,20 +54,20 @@ block content
       p.text-gray-500 Some resources for newcomers to help them to know us better.
       div.w-full.grid.grid-cols-1.gap-3.mt-6.lg_grid-cols-3
         //- Card
-        +resources-card("For first years", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nesciunt!", "#")
-        +resources-card("Tuition & Fees", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nesciunt!", "#")
-        +resources-card("Resource #3", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, nesciunt!", "#")
+        +resources-card("For First Years", "All the first year freshers have to donate a total of Rs.2000/-(one time) to Cultural Committee for Cultural Festive & Development Purposes", "#")
+        +resources-card("Tuition & Fees", "1) Tuition Fee Structure of Govt. / Central Govt. / Govt. Spons. Institutions: Rs.50/- per month 2) Tuition Fee Structure of Self-Financed (Private) Institutions: - through JEXPO/VOCLET counseling: Rs.1,500/mo", "#")
+        +resources-card("Huge Library", "The Library is having a collection of more than 3.5 Lakh documents, subscribing about 100+ print journals, and providing access to over 26,000+ online full- text journals", "#")
 
-    img.h-36.lg_h-full.w-full.object-cover(src="./assets/bitmap.png", alt="")
+    img.h-36.lg_h-full.w-full.object-cover(src="./assets/StudentWell.jpg", alt="Student Wellbeing")
   //- Events Section
   section.p-4.sm_px-10.py-8
     .flex.items-center.justify-between.mb-3
       h1.uppercase.text-2xl.font-serif.font-bold.text-gray-700 Events @ CCP
       a.block.text-blue-700.border-b-2.border-blue-700(href="#") More Events
     .w-full.grid.grid-cols-1.gap-3.sm_grid-cols-2.lg_grid-cols-3
-      +events-card("Biswakarma Puja", "./assets/bitmap.png")
-      +events-card("Fresher's Party", "./assets/bitmap.png")
-      +events-card("Annual Function", "./assets/bitmap.png")
+      +events-card("Biswakarma Puja", "./assets/Biswakarma-Puja.png")
+      +events-card("Fresher's Party", "./assets/Freshers.jpg")
+      +events-card("Annual Function", "./assets/AnnualFunction.png")
 
   .space-y-4
   //- Our Partners Section
