@@ -10,7 +10,7 @@ mixin programs-card(image, name, description, href)
     a.text-blue-600.font-semibold.border-b-2.border-blue-600(href= href) Learn More
 
 mixin resources-card(title, summary, href)
-  .w-full.flex.flex-col.items-start.md_flex-row.md_items-center.md_justify-between.lg_flex-col.lg_items-start.lg_justify-start.group.p-4.rounded.transition.duration-500.ease-in-out.border.border-gray-200.hover_border-blue-100.hover_bg-blue-100
+  .w-full.flex.flex-col.items-start.justify-between.md_flex-row.md_items-center.md_justify-between.lg_flex-col.lg_items-start.lg_justify-start.group.p-4.rounded.transition.duration-500.ease-in-out.border.border-gray-200.hover_border-blue-100.hover_bg-blue-100
     .flex.flex-col.items-start
       h1.font-bold.text-gray-700.text-lg.mb-4= title
       p.text-gray-500.mb-4.md_mb-0.lg_mb-4= summary
@@ -58,7 +58,7 @@ block content
         +resources-card("Tuition & Fees", "1) Tuition Fee Structure of Govt. / Central Govt. / Govt. Spons. Institutions: Rs.50/- per month 2) Tuition Fee Structure of Self-Financed (Private) Institutions: - through JEXPO/VOCLET counseling: Rs.1,500/mo", "#")
         +resources-card("Huge Library", "The Library is having a collection of more than 3.5 Lakh documents, subscribing about 100+ print journals, and providing access to over 26,000+ online full- text journals", "#")
 
-    img.h-36.lg_h-full.w-full.object-cover(src="./assets/StudentWell.jpg", alt="Student Wellbeing")
+    img.h-72.lg_h-full.w-full.object-cover.object-center(src="./assets/StudentWell.jpg", alt="Student Wellbeing")
   //- Events Section
   section.p-4.sm_px-10.py-8
     .flex.items-center.justify-between.mb-3
