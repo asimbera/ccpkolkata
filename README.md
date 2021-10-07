@@ -10,4 +10,4 @@ Live Preview: <https://ccpkolkata.asimbera.tech>
 
 ## Credits
 
-- [@sumuhere](https://github.com/sumuhere) - for assets
+- [@thatsuman](https://githubgit@github.com:thatsuman/wbtourism-1.git.com/thatsuman) - for assets
